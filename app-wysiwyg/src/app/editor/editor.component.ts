@@ -10,6 +10,10 @@ export class EditorComponent implements OnInit {
   @ViewChild('content') content;
 
   innerHtml: string;
+  emojiSmile = String.fromCodePoint(0x1F605);
+  emojiAngry = String.fromCodePoint(0x1F620);
+  emojiPoker = String.fromCodePoint(0x1F610);
+  emojiAngel = String.fromCodePoint(0x1F607);
 
   constructor() { }
 
