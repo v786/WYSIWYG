@@ -25,8 +25,7 @@ html {
 
 .tool-items {
   background-color: rgb(27, 26, 26);
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding: 30%;
   cursor: pointer;
   color: #ffff;
 }
@@ -101,5 +100,25 @@ img {
 
 label {
   margin-left: 0.04rem;
-  padding-left: .7rem
+}
+
+.tooltipx {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipx .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipx:hover .tooltiptext {
+  visibility: visible;
 }
