@@ -7,7 +7,7 @@ In order to pass content from the editable element to the server, generally the 
 is loaded into a textarea, which is posted. The makeup of the HTML generated depends on the browser.
 
 Deployment instruction:
-Just clone and run using <b>ng serve</>
+Just clone and run using <b>ng serve</b>
 
 Screenshot :
 <img src="https://github.com/v786/WYSIWYG/blob/master/Screenshot%202019-04-19%20at%201.45.59%20AM.png?raw=true"></img>
