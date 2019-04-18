@@ -7,7 +7,7 @@
   </div>
 
   <div class="tooltipx">
-    <button class="tool-items fa fa-italic" onclick="document.execCommand('italic', false, '');">
+    <button class="tool-items fa fa-italic w-100" onclick="document.execCommand('italic', false, '');">
     </button>
     <span class="tooltiptext">Italic</span>
   </div>
@@ -33,7 +33,7 @@
 
 
   <div class="tooltipx">
-    <label for="file" class="tool-items fa fa-file-image-o"></label>
+    <label for="file" class="tool-items fa fa-file-image-o m-0"></label>
     <input class="tool-items fa fa-file-image-o" type="file" accept="image/*" id="file" style="display: none;"
       onchange="getImage()">
     <span class="tooltiptext">image</span>
@@ -52,7 +52,7 @@
   </div>
 
   <div class="tooltipx">
-    <button class="tool-items fa fa-tint" onclick="changeColor()"></button>
+    <button class="tool-items fa fa-tint w-100" onclick="changeColor()"></button>
 
     <span class="tooltiptext">changeColor</span>
   </div>
@@ -103,13 +103,20 @@
 </div>
 
 <div class="center">
-  <div class="editor" contenteditable>
+  <div #content class="editor" contenteditable="true">
     <h1>Simple Html editor</h1>
     <p>Good to start</p>
   </div>
 </div>
 
-<div class="center">
-  <section class="getcontent">
-  </section>
+<button (click)="getContent(content)" type="button" class="btn btn-primary btn-lg btn-block">Get Text</button>
+
+
+<div class="center border bg-light m-4 p-2 ">
+  <div>
+    Content to be Posted
+  </div>
+  <div class="center border bg-light m-4 p-2 ">
+    {{ innerHtml }}
+  </div>
 </div>
